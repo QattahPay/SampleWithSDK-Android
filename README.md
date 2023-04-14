@@ -1,3 +1,9 @@
+<p align="center">
+    <img src="https://random-bucket.fra1.cdn.digitaloceanspaces.com/images/logo_en.svg"
+        height="230">
+        
+</p>
+
 ## Qattah Pay SDK Sample Application
 
 This is a sample application that demonstrates how to use the Qattah Pay SDK in your own application.
