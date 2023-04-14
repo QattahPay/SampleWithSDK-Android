@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
 
-    private val qattahPayApiKey = "1|Q4BxitAjdBS07OhzIsioggcTMqhl2dArF5laoQTZ"
+    private val qattahPayApiKey = "API_KEY_HERE"
     private val paymentCallbacks = object : PaymentCallback {
         override fun onStarted(paymentId: String) {
             // Handle payment creation
