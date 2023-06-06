@@ -7,6 +7,8 @@ import sa.qattahpay.sample.databinding.ActivityMainBinding
 import sa.qattahpay.sdk.PaymentRequest
 import sa.qattahpay.sdk.QattahPay
 import sa.qattahpay.sdk.domain.entities.Currency
+import sa.qattahpay.sdk.domain.entities.Language
+import sa.qattahpay.sdk.domain.entities.Theme
 import sa.qattahpay.sdk.domain.interfaces.PaymentCallback
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
 
-    private val qattahPayApiKey = "API_KEY_HERE"
+    private val qattahPayApiKey = "YOUR_API_HERE"
     private val paymentCallbacks = object : PaymentCallback {
         override fun onStarted(paymentId: String) {
             // Handle payment creation
@@ -66,6 +68,8 @@ class MainActivity : AppCompatActivity() {
                     .setDescription(description.text.toString())
                     .setCustomerEmail(customerEmail.text.toString())
                     .setCustomerMobileNumber(customerPhone.text.toString())
+                    .setLanguage(Language.EN)
+                    .setTheme(Theme.DARK)
                     .isSandbox(true)
                     .build()
 
