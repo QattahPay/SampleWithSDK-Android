@@ -72,6 +72,8 @@ To make a payment request, you need to create a PaymentRequest object and call t
                 .setDescription("PRODUCT_DESCRIPTION")
                 .setCustomerEmail("CUSTOMER_EMAIL")
                 .setCustomerMobileNumber("CUSTOMER_MOBILE_NUMBER")
+                .setLanguage(Language.EN)
+                .setTheme(Theme.DARK)
                 .isSandbox(true)
                 .build()
 
