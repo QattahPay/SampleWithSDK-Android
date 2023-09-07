@@ -47,7 +47,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation 'com.github.QattahPay:qattahpay-android-sdk:2.4@aar'
+    implementation 'com.github.QattahPay:qattahpay-android-sdk:2.7@aar'
 }
 
 ```
